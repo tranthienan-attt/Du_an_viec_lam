@@ -1118,7 +1118,7 @@ function courseActionHtml(c,u,{sm=false}={}){
 const PR={period:'month'};
 const PLAN_FEATS={
   base:[[1,'Hồ sơ năng lực và phân tích kỹ năng'],[1,'Tìm việc, ứng tuyển, lưu tin'],[1,'Tạo CV online với 5 mẫu'],[1,'Cộng đồng và điểm thưởng'],[1,'Lodestar AI: 5 giờ mỗi tháng'],[0,'Phòng mô phỏng phỏng vấn'],[0,'Đề xuất và đăng ký khóa học'],[0,'Lộ trình 12 tuần']],
-  pro:[[1,'Toàn bộ quyền lợi gói Base'],[1,'Lodestar AI: 30 giờ mỗi tháng'],[1,'Phòng mô phỏng phỏng vấn và chấm điểm'],[1,'Đề xuất và đăng ký khóa học'],[1,'Giảm 10% giá mọi khóa học'],[0,'Lộ trình 12 tuần cá nhân hóa']],
+  pro:[[1,'Toàn bộ quyền lợi gói Base'],[1,'Lodestar AI: 100 giờ mỗi tháng'],[1,'Phòng mô phỏng phỏng vấn và chấm điểm'],[1,'Đề xuất và đăng ký khóa học'],[1,'Giảm 10% giá mọi khóa học'],[0,'Lộ trình 12 tuần cá nhân hóa']],
   promax:[[1,'Toàn bộ quyền lợi gói Pro'],[1,'Lodestar AI không giới hạn'],[1,'Lộ trình 12 tuần cá nhân hóa'],[1,'Giảm 30% giá mọi khóa học'],[1,'Mở khóa toàn bộ chức năng hiện có']]
 };
 const feats=list=>`<ul class="plan-feats">${list.map(([on,t])=>on?`<li class="on"><span aria-hidden="true">✓</span> ${esc(t)}</li>`:`<li class="off"><span aria-hidden="true">—</span> <span class="sr">Không có: </span>${esc(t)}</li>`).join('')}</ul>`;

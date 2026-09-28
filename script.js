@@ -1117,7 +1117,7 @@ function courseActionHtml(c,u,{sm=false}={}){
 /* ---------- Trang Bảng giá ---------- */
 const PR={period:'month'};
 const PLAN_FEATS={
-  base:[[1,'Hồ sơ năng lực và phân tích kỹ năng'],[1,'Tìm việc, ứng tuyển, lưu tin'],[1,'Tạo CV online với 5 mẫu'],[1,'Cộng đồng và điểm thưởng'],[1,'Lodestar AI: 5 giờ mỗi tháng'],[0,'Phòng mô phỏng phỏng vấn'],[0,'Đề xuất và đăng ký khóa học'],[0,'Lộ trình 12 tuần']],
+  base:[[1,'Hồ sơ năng lực và phân tích kỹ năng'],[1,'Tìm việc, ứng tuyển, lưu tin'],[1,'Tạo CV online với 5 mẫu'],[1,'Cộng đồng và điểm thưởng'],[1,'Lodestar AI: 50 giờ mỗi tháng'],[0,'Phòng mô phỏng phỏng vấn'],[0,'Đề xuất và đăng ký khóa học'],[0,'Lộ trình 12 tuần']],
   pro:[[1,'Toàn bộ quyền lợi gói Base'],[1,'Lodestar AI: 100 giờ mỗi tháng'],[1,'Phòng mô phỏng phỏng vấn và chấm điểm'],[1,'Đề xuất và đăng ký khóa học'],[1,'Giảm 10% giá mọi khóa học'],[0,'Lộ trình 12 tuần cá nhân hóa']],
   promax:[[1,'Toàn bộ quyền lợi gói Pro'],[1,'Lodestar AI không giới hạn'],[1,'Lộ trình 12 tuần cá nhân hóa'],[1,'Giảm 30% giá mọi khóa học'],[1,'Mở khóa toàn bộ chức năng hiện có']]
 };
@@ -1150,7 +1150,7 @@ function renderPricing(){
   <div class="plan-grid" style="margin-top:16px">${planCard('base')}${planCard('pro','Phổ biến')}${planCard('promax')}</div>
   <p class="notice" style="margin:12px 2px 0">Tin tuyển dụng dành riêng cho sinh viên UEH chỉ mở với email @st.ueh.edu.vn, không mở bằng gói trả phí.</p>
   <div class="card" style="margin-top:20px;overflow:auto"><table class="cmp"><caption class="sr">So sánh các gói dành cho sinh viên</caption><thead><tr><th scope="col">Tính năng</th><th scope="col">Base</th><th scope="col">Pro</th><th scope="col">Pro Max</th><th scope="col">Email UEH</th></tr></thead><tbody>
-   <tr><th scope="row">Thời gian dùng Lodestar mỗi tháng</th><td>5 giờ</td><td>30 giờ</td><td>Không giới hạn</td><td>Không giới hạn</td></tr>
+   <tr><th scope="row">Thời gian dùng Lodestar mỗi tháng</th><td>50 giờ</td><td>100 giờ</td><td>Không giới hạn</td><td>Không giới hạn</td></tr>
    <tr><th scope="row">Hồ sơ, tìm việc, ứng tuyển, tạo CV, cộng đồng</th>${yes}${yes}${yes}${yes}</tr>
    <tr><th scope="row">Phòng mô phỏng phỏng vấn và chấm điểm</th>${no}${yes}${yes}${yes}</tr>
    <tr><th scope="row">Đề xuất và đăng ký khóa học</th>${no}${yes}${yes}${yes}</tr>
